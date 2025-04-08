@@ -4,20 +4,6 @@ This project provides an Arduino library to measure wind speed and direction usi
 
 ---
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Required Materials](#required-materials)
-- [Setup](#setup)
-- [Library Installation](#library-installation)
-- [Wiring and Hardware Connections](#wiring-and-hardware-connections)
-- [Calibration and Usage](#calibration-and-usage)
-- [Example Sketch](#example-sketch)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-
----
-
 ## Introduction
 
 The Anemometer library allows you to read wind data with an Arduino or an ESP32. Using ultrasonic sensors, it measures both the wind speed (in m/s) and wind direction (in degrees, where 0° corresponds to North, 90° to East, etc.).  
@@ -64,7 +50,8 @@ There are two constructors to initialize the Anemometer object:
   Anemometer(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distancenoso, unsigned int distanceweea);
   ```
 ---
-## The library provides several public methods:
+## Methods:
+The library provides several public
 
 ### Readstate
 ```cpp
