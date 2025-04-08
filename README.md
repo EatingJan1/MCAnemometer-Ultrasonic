@@ -63,3 +63,32 @@ There are two constructors to initialize the Anemometer object:
   ```cpp
   Anemometer(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distancenoso, unsigned int distanceweea);
   ```
+---
+## The library provides several public methods:
+
+### Readstate
+```cpp
+void readstate()
+```
+Reads sensor data of the Ultrasonic Sensor
+
+### Calibrate Sensor 
+```cpp
+void calibrate()
+```
+Calibrate the wind sensors only indoors or in calm conditions
+### getspeed
+```cpp
+float getspeed()
+```
+Calculates and returns the wind speed in meters per second.
+### getangle
+```cpp
+float getangle()
+```
+Calculates and returns the wind direction in degrees (0–360° where 90° = North and 0° = East).
+### getguastswind
+```cpp
+float getgustswind()
+```
+Returns the maximum wind gust (highest measured wind speed) recorded during one readstate period.
