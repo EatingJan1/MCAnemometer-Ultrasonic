@@ -59,8 +59,8 @@ void Anemometer::readstate()
 
     this->state.wpd.n = std::accumulate(n.begin(), n.end(), 0) / n.size();
     this->state.wpd.e = std::accumulate(e.begin(), e.end(), 0) / e.size();
-    this->state.wpd.w = std::accumulate(s.begin(), w.end(), 0) / w.size();
-    this->state.wpd.s = std::accumulate(w.begin(), s.end(), 0) / s.size();
+    this->state.wpd.w = std::accumulate(w.begin(), w.end(), 0) / w.size();
+    this->state.wpd.s = std::accumulate(s.begin(), s.end(), 0) / s.size();
 
     float noso_s = ((this->state.wpd.n)-(this->state.wpd.s)+this->t_offset.noso) / 1e6;
     float wees_s = ((this->state.wpd.w)-(this->state.wpd.e)+this->t_offset.wees) / 1e6;
