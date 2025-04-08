@@ -16,7 +16,7 @@ class Anemometer
 {
     public:
     Anemometer(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distance);
-    Anemometer(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distancenosu, unsigned int distanceweea);
+    Anemometer(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distancenoso, unsigned int distanceweea);
     
     
     void readstate();
@@ -40,7 +40,7 @@ class Anemometer
     
     struct
     {
-        float nosu;
+        float noso;
         float wees;
         
     }t_offset;
@@ -63,23 +63,19 @@ class Anemometer
 
     struct
     {
-        float nosu;
+        float noso;
         float wees;
     }dist;
     
     
     
     
-    void loadvalues(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distancenosu, unsigned int distanceweea);
+    void loadvalues(unsigned int ntrig, unsigned int necho, unsigned int etrig, unsigned int eecho, unsigned int strig, unsigned int secho, unsigned int wtrig, unsigned int wecho, unsigned int distancenoso, unsigned int distanceweea);
     
     float reeddistance(uout &comp);
 
 
-    //Automode
-    //set(accuracy & time)
-    //finish struct
-    //speed messure privat methote
-    //gusts ermittel
+
 
 };
 
