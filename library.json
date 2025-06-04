@@ -1,0 +1,33 @@
+{
+  "name": "MCAnemometer",
+  "version": "1.0.0",
+  "description": "Arduino Library for Wind Measurement using Ultrasonic Sensors (square and rectangular arrangements)",
+  "keywords": [
+    "anemometer",
+    "wind",
+    "sensor",
+    "ultrasonic",
+    "weather",
+    "esp32",
+    "arduino"
+  ],
+  "authors": [
+    {
+      "name": "Eating1",
+      "url": "https://github.com/EatingJan1",
+      "maintainer": true
+    },
+    {
+      "name": "DracoRex462",
+      "url": "https://github.com/DracoRex462",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EatingJan1/MCAnemometer-Ultrasonic.gits"
+  },
+  "frameworks": "arduino",
+  "platforms": "*",
+  "headers": "MCAnemometer.h"
+}
