@@ -1,6 +1,6 @@
 {
   "name": "MCAnemometer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Arduino Library for Wind Measurement using Ultrasonic Sensors (square and rectangular arrangements)",
   "keywords": [
     "anemometer",
